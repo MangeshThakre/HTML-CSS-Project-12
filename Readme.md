@@ -13,4 +13,4 @@
  ##  _[live project link](https://full-stack-js-html-css-project-12.netlify.app/ "HTML-CSS_Project-12" )_
 
 ## Demo
-![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-10/blob/master/porject-12.gif)
+![alt text](https://github.com/MangeshThakre/HTML-CSS-Project-12/blob/master/project-13.gif)
