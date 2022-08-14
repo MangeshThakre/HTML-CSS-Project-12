@@ -19,7 +19,7 @@
     <title>HTML-CSS-project-12</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="body">
     <nav>
       <div class="nav-left">
         <img src="./image/white-logo.png" alt="logo" />
@@ -34,6 +34,9 @@
           <li>Subscribe</li>
         </ul>
         <button>Let's Talk</button>
+      </div>
+      <div class="buttoncontainer">
+        <div class="hamburger-menu"></div>
       </div>
     </nav>
     <div class="container">
@@ -76,17 +79,17 @@
           </div>
         </div>
         <div class="section-two-img">
-            <div></div>
-         </div>
+          <div></div>
+        </div>
       </div>
       <div class="section-three">
         <div class="section-three-head">
           <h1>We have made your care easy for you</h1>
         </div>
         <div class="section-three-even">
-            <div class="section-three-evenimage-box">
-                <div class="section-three-even-1mage"></div>
-            </div>
+          <div class="section-three-evenimage-box">
+            <div class="section-three-even-1mage"></div>
+          </div>
           <div class="section-three-even-content">
             <h1>EffectiveWebsite design and Edlopment</h1>
             <p>
@@ -98,10 +101,9 @@
           </div>
         </div>
         <div class="section-three-odd">
-            <div class="section-three-evenimage-box">
-
-                <div class="section-three-even-2mage"></div>
-            </div>
+          <div class="section-three-evenimage-box">
+            <div class="section-three-even-2mage"></div>
+          </div>
           <div class="section-three-odd-content">
             <h1>EffectiveWebsite design and Edlopment</h1>
             <p>
@@ -113,10 +115,9 @@
           </div>
         </div>
         <div class="section-three-even">
-            <div class="section-three-evenimage-box">
-
-                <div class="section-three-even-3mage"></div>
-            </div>
+          <div class="section-three-evenimage-box">
+            <div class="section-three-even-3mage"></div>
+          </div>
           <div class="section-three-even-content">
             <h1>People Will Always Judge the book by it's cover</h1>
             <p>
@@ -177,14 +178,14 @@
       <div class="footer-top">
         <img src="./image/white-logo.png" alt="logo" />
         <div>
-          <div><img src="./image/MediaIcons/Group 1.svg" alt="email"></div>
-          <div><img src="./image/MediaIcons/Group 2.svg" alt="fb"></div>
-          <div><img src="./image/MediaIcons/Group 3.svg" alt="in"></div>
-          <div><img src="./image/MediaIcons/Group 4.svg" alt="Twitter"></div>
-          <div><img src="./image/MediaIcons/Group 5.svg" alt="Twitter"></div>
+          <div><img src="./image/MediaIcons/Group 1.svg" alt="email" /></div>
+          <div><img src="./image/MediaIcons/Group 2.svg" alt="fb" /></div>
+          <div><img src="./image/MediaIcons/Group 3.svg" alt="in" /></div>
+          <div><img src="./image/MediaIcons/Group 4.svg" alt="Twitter" /></div>
+          <div><img src="./image/MediaIcons/Group 5.svg" alt="Twitter" /></div>
         </div>
       </div>
-      <div class ="footer-content">
+      <div class="footer-content">
         <div>
           <h3>Company</h3>
           <p>About Us</p>
@@ -223,4 +224,25 @@
       </div>
     </footer>
   </body>
+
+
+  <script>
+
+    // const herocontainer = document.querySelector(".hero-container")
+    const body = document.querySelector(".body")
+    const sidebarMenu = document.querySelector(".nav-right")
+    const buttoncontainer =document.querySelector(".buttoncontainer")
+    const burgermenu = document.querySelector(".hamburger-menu")
+    buttoncontainer.addEventListener('click' , (e)=>{
+      burgermenu.classList.toggle("cross-menu")
+      sidebarMenu.classList.toggle("close")
+      body.classList.toggle("hide-scroll")
+      // herocontainer.classList.toggle("shadow")
+  
+    })
+  
+  </script>
+
+
+
 </html>
