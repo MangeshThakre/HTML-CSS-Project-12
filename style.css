@@ -530,6 +530,10 @@ footer {
   font-weight: bold;
 }
 
+.buttoncontainer{
+  display: none;
+}
+
 @media (max-width: 500px) {
 
 
